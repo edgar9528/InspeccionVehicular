@@ -8,10 +8,10 @@ import com.tdt.artlux.R;
 
 public class ParametrosWS {
 
-    String URL;
-    String METODO;
-    String SOAP_ACTION;
-    String NAMESPACES;
+    private String URL;
+    private String METODO;
+    private String SOAP_ACTION;
+    private String NAMESPACES;
 
     public ParametrosWS(String METODO, Context context) {
         this.METODO = METODO;

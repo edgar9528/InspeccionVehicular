@@ -1,6 +1,5 @@
 <android.support.design.widget.CoordinatorLayout
 xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
@@ -33,11 +32,11 @@ android:background="@color/colorPrimary">
             <ImageView
                 android:id="@+id/logo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:background="@drawable/logotdt"
                 android:layout_weight="5"
-                android:contentDescription="TODO"
                 android:paddingRight="10dp"
+                android:paddingLeft="10dp"
                 />
 
 
@@ -59,7 +58,7 @@ android:background="@color/colorPrimary">
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textColor="@color/v_negro"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:text="Transmit Data Terminal de México S.A de C.V Todos los Derechos Reservados."
             android:paddingBottom="15dp"
             >

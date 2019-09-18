@@ -18,10 +18,7 @@ public class CheckText {
                 full=false;
         }
 
-        if(full)
-            return true;
-        else
-            return false;
+        return full;
     }
 
     public boolean TryParse(String edad)

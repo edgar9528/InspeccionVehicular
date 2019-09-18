@@ -3,11 +3,11 @@ package com.tdt.artlux.model;
 import java.io.Serializable;
 
 public class InfoVehiculoSalida implements Serializable {
-    String codigo;
-    String ubicacion;
-    String turno;
-    String retrabajos;
-    String aplicador;
+    private String codigo;
+    private String ubicacion;
+    private String turno;
+    private String retrabajos;
+    private String aplicador;
 
     public InfoVehiculoSalida() {
     }

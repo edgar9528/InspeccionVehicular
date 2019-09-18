@@ -4,17 +4,17 @@ import java.io.Serializable;
 
 public class InfoVehiculoEntrada implements Serializable {
 
-    String codigo;
-    String marca;
-    String caja;
-    int danLeves;
-    int danGraves;
-    String destino;
-    String color;
-    int marcaClave;
-    int cajaClave;
-    String destino_id;
-    String color_id;
+    private String codigo;
+    private String marca;
+    private String caja;
+    private int danLeves;
+    private int danGraves;
+    private String destino;
+    private String color;
+    private int marcaClave;
+    private int cajaClave;
+    private String destino_id;
+    private String color_id;
 
     public String getColor_id() {
         return color_id;
