@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tdt.artlux">
+    package="com.tdt.inspeccionVehicular">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -15,7 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".views.PrincipalActivity">
+        <activity android:name="com.tdt.inspeccionVehicular.views.PrincipalActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,37 +26,37 @@
         </activity>
 
 
-        <activity android:name=".views.activitysSalida.Salida2" />
-        <activity android:name=".views.activitysSalida.Salida1" />
-        <activity android:name=".views.activitysEntrada.Entrada5" />
-        <activity android:name=".views.activitysEntrada.Entrada4" />
-        <activity android:name=".views.activitysEntrada.Entrada3">
+        <activity android:name="com.tdt.inspeccionVehicular.views.activitysSalida.Salida2" />
+        <activity android:name="com.tdt.inspeccionVehicular.views.activitysSalida.Salida1" />
+        <activity android:name="com.tdt.inspeccionVehicular.views.activitysEntrada.Entrada5" />
+        <activity android:name="com.tdt.inspeccionVehicular.views.activitysEntrada.Entrada4" />
+        <activity android:name="com.tdt.inspeccionVehicular.views.activitysEntrada.Entrada3">
             android:parentActivityName=".views.activitysEntrada.Entrada2">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".views.activitysEntrada.Entrada2" />
+                android:value="com.tdt.inspeccionVehicular.views.activitysEntrada.Entrada2" />
         </activity>
-        <activity android:name=".views.activitysEntrada.Entrada2">
+        <activity android:name="com.tdt.inspeccionVehicular.views.activitysEntrada.Entrada2">
             android:parentActivityName=".views.activitysEntrada.Entrada1">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".views.activitysEntrada.Entrada1" />
+                android:value="com.tdt.inspeccionVehicular.views.activitysEntrada.Entrada1" />
         </activity>
-        <activity android:name=".views.activitysEntrada.Entrada1" />
-        <activity android:name=".views.InicioActivity" />
+        <activity android:name="com.tdt.inspeccionVehicular.views.activitysEntrada.Entrada1" />
+        <activity android:name="com.tdt.inspeccionVehicular.views.InicioActivity" />
         <activity
-            android:name=".views.administrar.ModuloComunicacionActivity"
-            android:parentActivityName=".views.InicioActivity">
+            android:name="com.tdt.inspeccionVehicular.views.administrar.ModuloComunicacionActivity"
+            android:parentActivityName="com.tdt.inspeccionVehicular.views.InicioActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.tdt.artlux.views.InicioActivity" />
+                android:value="com.tdt.inspeccionVehicular.views.InicioActivity" />
         </activity>
         <activity
-            android:name=".views.administrar.LicenciaActivity"
-            android:parentActivityName=".views.InicioActivity">
+            android:name="com.tdt.inspeccionVehicular.views.administrar.LicenciaActivity"
+            android:parentActivityName="com.tdt.inspeccionVehicular.views.InicioActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.tdt.artlux.views.InicioActivity" />
+                android:value="com.tdt.inspeccionVehicular.views.InicioActivity" />
         </activity>
     </application>
 
