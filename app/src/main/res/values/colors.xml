@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#476fd9</color>
+    <color name="colorPrimaryDark">#476fd9</color>
+    <color name="colorPrimaryDark2">#132555</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="editTextColorWhite">#FFFFFF</color>
+    <color name="editTextColorBlack">#000000</color>
+
+    <color name="colorButton">#cf9320</color>
+    <color name="colorButtonPress">#e9b659</color>
+
+    <color name="color_ButtonPress">#1843b6</color>
+
+    <color name="grey">#E5E5E5</color>
+    <color name="fondo">#d3d2d2</color>
+
+    <color name="RED">#e10b0b</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="v_negro">#050308</color>
+    <color name="v_blanco">#FFFFFF</color>
+    <color name="v_azul">#0B2443</color>
+    <color name="v_grisOsc">#57585A</color>
+    <color name="v_grisCla">#ADB0B3</color>
+    <color name="v_rojo">#860011</color>
+    <color name="v_amarillo">#CF7C2A</color>
+    <color name="v_cyan">#2DFDFF</color>
+
+</resources>

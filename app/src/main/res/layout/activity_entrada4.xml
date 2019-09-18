@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activitysEntrada.Entrada4">
+
+
+    <include layout="@layout/actionbar_toolbar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:weightSum="12"
+        android:paddingLeft="@dimen/home_margin"
+        android:paddingRight="@dimen/home_margin"
+        android:paddingTop="@dimen/home_margin"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecciona el color"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:paddingTop="10dp"
+                android:id="@+id/iv_vehiculo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="TODO"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    >
+
+                    <Button
+                        android:id="@+id/b_negro"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:background="@color/v_negro"
+                        android:onClick="cambiarColor"
+                        android:tag="Negro"
+                        >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/b_blanco"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:background="@color/v_blanco"
+                        android:tag="Blanco"
+                        android:onClick="cambiarColor"
+                        >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/b_azul"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:background="@color/v_azul"
+                        android:tag="Azul"
+                        android:onClick="cambiarColor"
+                        >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/b_grisOsc"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:background="@color/v_grisOsc"
+                        android:tag="GrisOsc"
+                        android:onClick="cambiarColor"
+                        >
+                    </Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    >
+
+                    <Button
+                        android:id="@+id/b_grisCla"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:background="@color/v_grisCla"
+                        android:tag="GrisCla"
+                        android:onClick="cambiarColor"
+                        >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/b_rojo"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:background="@color/v_rojo"
+                        android:tag="Rojo"
+                        android:onClick="cambiarColor"
+                        >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/b_amarillo"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:background="@color/v_amarillo"
+                        android:tag="Amarillo"
+                        android:onClick="cambiarColor"
+                        >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/b_cyan"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:background="@color/v_cyan"
+                        android:tag="Cyan"
+                        android:onClick="cambiarColor"
+                        >
+                    </Button>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                >
+
+                <Button
+                    android:id="@+id/button_regresar4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Regresar"
+                    android:theme="@style/RaisedButtonDark"
+                    />
+
+                <Button
+                    android:id="@+id/button_siguiente4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Siguiente"
+                    android:theme="@style/RaisedButtonDark"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

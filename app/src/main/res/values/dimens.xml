@@ -1,0 +1,23 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="EditTextSize_Login">20sp</dimen>
+    <dimen name="paddingHorin">32dp</dimen>
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="TextView_nc">16sp</dimen>
+    <dimen name="edittext_margin">10dp</dimen>
+    <dimen name="height_cardview">100dp</dimen>
+    <dimen name="cornerRadius_carview">5dp</dimen>
+
+    <dimen name="Title_cardview">22sp</dimen>
+    <dimen name="Text_cardview">20sp</dimen>
+
+    <dimen name="bottombar_height">50dp</dimen>
+    <dimen name="home_margin">12dp</dimen>
+    <dimen name="appbarlayout_height">180dp</dimen>
+    <dimen name="height_divider">1dp</dimen>
+    <dimen name="CircleImage">145dp</dimen>
+    <dimen name="elevationCircle">10dp</dimen>
+    <dimen name="Text_profile">18sp</dimen>
+
+
+</resources>

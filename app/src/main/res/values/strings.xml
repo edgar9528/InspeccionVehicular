@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">Artlux</string>
+    <string name="title_activity_referencia" translatable="false">ReferenciaActivity</string>
+    <string name="NAMESPACE" translatable="false">"http://tempuri.org/"</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+</resources>
