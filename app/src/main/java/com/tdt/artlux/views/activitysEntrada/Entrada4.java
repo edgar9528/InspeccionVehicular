@@ -18,9 +18,7 @@ public class Entrada4 extends AppCompatActivity {
     boolean seleccionado=false;
     String color_auto;
     String color_auto_id;
-
     ImageView iv_color;
-
     Button button_siguiente,button_reg;
 
     @Override
