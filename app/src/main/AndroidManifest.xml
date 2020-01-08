@@ -46,14 +46,17 @@
         <activity android:name="com.tdt.inspeccionVehicular.views.InicioActivity" />
         <activity
             android:name="com.tdt.inspeccionVehicular.views.administrar.ModuloComunicacionActivity"
-            android:parentActivityName="com.tdt.inspeccionVehicular.views.InicioActivity">
+            android:parentActivityName="com.tdt.inspeccionVehicular.views.InicioActivity"
+            android:windowSoftInputMode="stateHidden">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.tdt.inspeccionVehicular.views.InicioActivity" />
         </activity>
         <activity
             android:name="com.tdt.inspeccionVehicular.views.administrar.LicenciaActivity"
-            android:parentActivityName="com.tdt.inspeccionVehicular.views.InicioActivity">
+            android:parentActivityName="com.tdt.inspeccionVehicular.views.InicioActivity"
+            android:windowSoftInputMode="stateHidden"
+            >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.tdt.inspeccionVehicular.views.InicioActivity" />
