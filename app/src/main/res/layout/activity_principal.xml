@@ -36,9 +36,6 @@ android:background="@color/colorPrimary">
                 android:paddingLeft="10dp"
                 />
 
-
-
-
     </LinearLayout>
 
     <LinearLayout

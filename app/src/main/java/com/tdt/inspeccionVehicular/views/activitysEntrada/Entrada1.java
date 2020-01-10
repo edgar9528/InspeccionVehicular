@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -62,7 +63,6 @@ public class Entrada1 extends AppCompatActivity {
 
             llenarSpinners();
 
-
             button_s1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -105,11 +105,13 @@ public class Entrada1 extends AppCompatActivity {
 
                 @Override
                 public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
+                    Log.d("salida","entro aqui1");
                 }
 
                 @Override
                 public void afterTextChanged(Editable editable) {
+
+                    Log.d("salida","entro aqui2");
 
                     String entrada = et_codigo.getText().toString();
                     if (entrada.length() > 0) {
