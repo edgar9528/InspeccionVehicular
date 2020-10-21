@@ -32,7 +32,7 @@ tools:context=".views.activitysEntrada.Entrada2">
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="Daños leves" />
+            android:text="@string/tv_danosLeves" />
 
         <EditText
             android:id="@+id/tv_leve"
@@ -51,7 +51,7 @@ tools:context=".views.activitysEntrada.Entrada2">
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="Daños graves" />
+            android:text="@string/tv_danosGraves" />
 
         <EditText
             android:id="@+id/tv_grave"
@@ -75,17 +75,16 @@ tools:context=".views.activitysEntrada.Entrada2">
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="5"
-                android:text="Regresar"
+                android:text="@string/bt_regresar"
                 android:theme="@style/RaisedButtonDark"
                 />
-
 
             <Button
                 android:id="@+id/button_siguiente2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="5"
-                android:text="Siguiente"
+                android:text="@string/bt_siguiente"
                 android:theme="@style/RaisedButtonDark"
                 />
 

@@ -28,9 +28,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="@drawable/logotdt"
+                android:background="@drawable/inspeccion"
                 />
-
         </RelativeLayout>
 
         <ScrollView
@@ -84,7 +83,7 @@
                     android:id="@+id/button_entrar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Entrar"
+                    android:text="@string/bt_iniciar"
                     android:theme="@style/RaisedButtonDark"
                     android:drawableLeft="@drawable/ic_entrar"
                     />
@@ -93,7 +92,7 @@
                     android:id="@+id/Bcom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Comms"
+                    android:text="@string/bt_comms"
                     android:theme="@style/RaisedButtonDark"
                     android:drawableLeft="@drawable/ic_config"
                     />

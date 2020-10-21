@@ -35,7 +35,7 @@ public class Entrada5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entrada5);
-        showToolbar("Resumen",false);
+        showToolbar(getString(R.string.tv_regisResum),false);
 
         try {
 
@@ -88,7 +88,7 @@ public class Entrada5 extends AppCompatActivity {
 
         @Override protected void onPreExecute() {
             progreso = new ProgressDialog(Entrada5.this);
-            progreso.setMessage("Guardando información...");
+            progreso.setMessage(getString(R.string.msg_wsGuardar));
             progreso.setCancelable(false);
             progreso.show();
         }
@@ -220,7 +220,7 @@ public class Entrada5 extends AppCompatActivity {
             }
             else
             {
-                Toast.makeText(getApplication(), "Error en la comunicación", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(), getString(R.string.msg6), Toast.LENGTH_LONG).show();
             }
 
         }

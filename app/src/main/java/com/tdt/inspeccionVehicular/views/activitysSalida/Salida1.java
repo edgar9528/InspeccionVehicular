@@ -52,7 +52,7 @@ public class Salida1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_salida1);
-        showToolbar("Salida",false);
+        showToolbar(getString(R.string.tv_regisSal),false);
 
         try {
 
@@ -116,7 +116,7 @@ public class Salida1 extends AppCompatActivity {
                         intent.putExtra("infoVehiculoSalida", infoVehiculoSalida);
                         startActivity(intent);
                     } else {
-                        Toast.makeText(getApplication(), "Rellena todos los campos", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), getString(R.string.msg_rellenaCampos), Toast.LENGTH_SHORT).show();
                     }
 
                 }
@@ -125,7 +125,7 @@ public class Salida1 extends AppCompatActivity {
             button_reg.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    advertenciaSalir(view.getContext());
+                    onBackPressed();
                 }
             });
 
@@ -183,7 +183,7 @@ public class Salida1 extends AppCompatActivity {
 
         @Override protected void onPreExecute() {
             progreso = new ProgressDialog(Salida1.this);
-            progreso.setMessage("Buscando información...");
+            progreso.setMessage(getString(R.string.msg_wsVerificando));
             progreso.setCancelable(false);
             progreso.show();
         }
@@ -261,7 +261,7 @@ public class Salida1 extends AppCompatActivity {
             if(aBoolean)
             {
                 if(!encontrado) {
-                    Toast.makeText(getApplication(), "No se encontro el vehiculo", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplication(), getString(R.string.msg11), Toast.LENGTH_SHORT).show();
                     et_codigo.setText("");
                     tv_codigo.setText("");
                     tv_color.setText("");
@@ -277,7 +277,7 @@ public class Salida1 extends AppCompatActivity {
             }
             else
             {
-                Toast.makeText(getApplication(), "Error en la comunicación", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplication(), getString(R.string.msg6), Toast.LENGTH_SHORT).show();
             }
 
             et_codigo.requestFocus();
@@ -290,31 +290,26 @@ public class Salida1 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-        advertenciaSalir(this );
-    }
-
-    public void advertenciaSalir(Context context)
-    {
-        AlertDialog.Builder dialogo1 = new AlertDialog.Builder(context,R.style.AlertDialogCustom);
-        dialogo1.setTitle("Importante");
-        dialogo1.setMessage("¿Desea salir sin guardar?");
+        AlertDialog.Builder dialogo1 = new AlertDialog.Builder(this,R.style.AlertDialogCustom);
+        dialogo1.setTitle(getString(R.string.msg_importante));
+        dialogo1.setMessage(getString(R.string.msg_salirSinGuardar));
         dialogo1.setCancelable(false);
 
-        dialogo1.setPositiveButton("Si", new DialogInterface.OnClickListener() {
+        dialogo1.setPositiveButton(getString(R.string.msg_si), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialogo1, int id) {
-
                 Intent intent = new Intent(getApplication(), InicioActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
-        dialogo1.setNegativeButton("No", new DialogInterface.OnClickListener() {
+        dialogo1.setNegativeButton(getString(R.string.msg_no), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialogo1, int id) {
                 //cancelar();
             }
         });
         dialogo1.show();
     }
+
 
     public void showToolbar(String title, boolean upButton)
     {

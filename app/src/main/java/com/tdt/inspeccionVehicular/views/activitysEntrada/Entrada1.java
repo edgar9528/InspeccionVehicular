@@ -46,7 +46,7 @@ public class Entrada1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entrada1);
 
-        showToolbar("Entrada",false);
+        showToolbar(getString(R.string.tv_regisEnt),false);
 
 
         try {
@@ -85,7 +85,7 @@ public class Entrada1 extends AppCompatActivity {
                         startActivity(intent);
 
                     } else {
-                        Toast.makeText(getApplication(), "Formato de codigo incorrecto", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), getString(R.string.msg13), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -93,7 +93,7 @@ public class Entrada1 extends AppCompatActivity {
             button_reg.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    advertenciaSalir(view.getContext());
+                    onBackPressed();
                 }
             });
 
@@ -168,44 +168,32 @@ public class Entrada1 extends AppCompatActivity {
 
         bd.close();
 
-        /*
-        if (fila.moveToFirst()) {
-
-            String id = fila.getString(0);
-            Log.d("salida",id);
-        } else
-            Toast.makeText(this, "No existe ningún usuario con ese dni", Toast.LENGTH_SHORT).show();
-         */
     }
 
     @Override
-    public void onBackPressed() {
-
-        advertenciaSalir(this );
-    }
-
-    public void advertenciaSalir(Context context)
+    public void onBackPressed()
     {
-        AlertDialog.Builder dialogo1 = new AlertDialog.Builder(context,R.style.AlertDialogCustom);
-        dialogo1.setTitle("Importante");
-        dialogo1.setMessage("¿Desea salir sin guardar?");
+        AlertDialog.Builder dialogo1 = new AlertDialog.Builder(this,R.style.AlertDialogCustom);
+        dialogo1.setTitle(getString(R.string.msg_importante));
+        dialogo1.setMessage(getString(R.string.msg_salirSinGuardar));
         dialogo1.setCancelable(false);
 
-        dialogo1.setPositiveButton("Si", new DialogInterface.OnClickListener() {
+        dialogo1.setPositiveButton(getString(R.string.msg_si), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialogo1, int id) {
-
                 Intent intent = new Intent(getApplication(), InicioActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
-        dialogo1.setNegativeButton("No", new DialogInterface.OnClickListener() {
+        dialogo1.setNegativeButton(getString(R.string.msg_no), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialogo1, int id) {
                 //cancelar();
             }
         });
         dialogo1.show();
+
     }
+
 
     public void showToolbar(String title, boolean upButton)
     {

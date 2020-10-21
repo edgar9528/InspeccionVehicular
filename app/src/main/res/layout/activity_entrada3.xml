@@ -36,7 +36,7 @@
                <TextView
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:text="Seleccione el destino"
+                   android:text="@string/tv_selecDest"
                    android:textColor="@color/colorPrimary"
                    android:textSize="18sp" />
 
@@ -73,7 +73,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
-                    android:text="Regresar"
+                    android:text="@string/bt_regresar"
                     android:theme="@style/RaisedButtonDark"
                     />
 
@@ -83,7 +83,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
-                    android:text="Siguiente"
+                    android:text="@string/bt_siguiente"
                     android:theme="@style/RaisedButtonDark"
                     />
 

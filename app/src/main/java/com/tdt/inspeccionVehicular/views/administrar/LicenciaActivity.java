@@ -49,14 +49,14 @@ public class LicenciaActivity extends AppCompatActivity {
     private String respJSONConsultaEmpresa, respJSONActivaLicencia;
 
     private String NAMESPACE = "http://tempuri.org/";
-    private String URL = "http://192.168.0.1/WebTDTLicencias/WSComunicacion.asmx";
+    private String URL = "http://svo-28-252.servidoresvirtuales.mx/WebTDTLicencias/WSComunicacion.asmx";
     private String SOAP_ACTION = "http://tempuri.org/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_licencia);
-        showToolbar("Licencia", true);
+        showToolbar(getString(R.string.tv_licencia), true);
 
         try {
             archivoRegistro = "Registro.properties";
@@ -93,13 +93,13 @@ public class LicenciaActivity extends AppCompatActivity {
                                 activaLicencia.execute();
                             }
                             else
-                                Toast.makeText(getApplication(), "Formato incorrecto", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplication(), getString(R.string.msg3), Toast.LENGTH_SHORT).show();
                         }
                         else
-                            Toast.makeText(getApplication(), "Numero de carácteres incorrecto", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplication(), getString(R.string.msg2), Toast.LENGTH_SHORT).show();
                     }
                     else {
-                        Toast.makeText(getApplication(), "Ingresa una licencia", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), getString(R.string.msg1), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -145,16 +145,16 @@ public class LicenciaActivity extends AppCompatActivity {
 
             if( strSerieL.equals(strSerieR) && strMarcaL.equals(strMarcaR) && strModeloL.equals(strModeloR) )
             {
-                tv_estado.setText("Licencia activada");
+                tv_estado.setText( getString(R.string.tv_estadoLic1) );
             }
             else
             {
-                tv_estado.setText("Licencia erronea");
+                tv_estado.setText( getString(R.string.tv_estadoLic2) );
             }
 
         } catch (Exception ex) {
             //Toast.makeText(this, "[EX LA] " + ex.getMessage(), Toast.LENGTH_SHORT).show();
-            tv_estado.setText("Producto sin licencia");
+            tv_estado.setText( getString(R.string.tv_estadoLic3) );
 
         } finally {
             try {
@@ -170,7 +170,7 @@ public class LicenciaActivity extends AppCompatActivity {
 
         @Override protected void onPreExecute() {
             progreso = new ProgressDialog(LicenciaActivity.this);
-            progreso.setMessage("Verificando...");
+            progreso.setMessage( getString(R.string.msg_wsVerificando));
             progreso.setCancelable(false);
             progreso.show();
         }
@@ -273,7 +273,7 @@ public class LicenciaActivity extends AppCompatActivity {
                         if(valRetorno.retorno == 1){
                             generaArchivoLicencia();
                             guardarLicencia();
-                            Toast.makeText(getApplicationContext(), "Producto activado", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), getString(R.string.tv_estadoLic1), Toast.LENGTH_LONG).show();
 
                             Intent intent = new Intent(LicenciaActivity.this, PrincipalActivity.class);
                             startActivity(intent);
@@ -293,7 +293,7 @@ public class LicenciaActivity extends AppCompatActivity {
             else
             {
                 //et_comunicacion.setText("Error en la comunicación");
-                Toast.makeText(getApplication(), "Error en la comunicación", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplication(), getString(R.string.msg_errorWS), Toast.LENGTH_SHORT).show();
             }
         }
     }

@@ -1,8 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Artlux</string>
-    <string name="title_activity_referencia">ReferenceActivity</string>
+    <string name="ejemplo">Example</string>
+    <string name="derechos">Transmit Data Terminal de México S.A de C.V All rights reserved.</string>
+    <string name="bt_iniciar">Start</string>
+    <string name="tv_licencia">License</string>
+    <string name="tv_noSerie">Serial number</string>
+    <string name="tv_modelo">Model</string>
+    <string name="tv_marca">Brand</string>
+    <string name="tv_dispositivo">Device</string>
+    <string name="bt_regresar">Return</string>
+    <string name="bt_activar">Activate</string>
+    <string name="msg1">Enter a license</string>
+    <string name="tv_estadoLic1">Activated license</string>
+    <string name="tv_estadoLic2">Wrong license</string>
+    <string name="tv_estadoLic3">Unlicensed Product</string>
+    <string name="msg_wsVerificando">Checking</string>
+    <string name="msg_errorWS">Communication error with the WS</string>
+    <string name="msg2">Incorrect number of characters</string>
+    <string name="msg3">Incorrect format</string>
 
+    <string name="bt_comms">Comms</string>
+    <string name="msg4">First configure in COMMS</string>
+    <string name="msg_importante">Important</string>
+    <string name="msg_salir">Do you want to exit the app?</string>
+    <string name="msg_si">Yes</string>
+    <string name="msg_no">No</string>
+
+
+    <string name="tv_comunicaciones">Communication</string>
+    <string name="tv_servidor">Server</string>
+    <string name="tv_tipoApp">Application type</string>
+    <string name="bt_cambiarTipo">Change type</string>
+    <string name="bt_guardar">Save</string>
+    <string name="bt_probar">Try</string>
+    <string name="bt_descargarBD">Download base</string>
+    <string name="tv_comunicacion">Communication with the server</string>
+
+    <string name="msg5">Communication has been successful</string>
+    <string name="msg6">Communication error</string>
+    <string name="msg7">Database downloaded</string>
+    <string name="msg_infoGuardada">Information saved successfully</string>
+    <string name="msg8">Enter the server</string>
+    <string name="msg9">Save server information</string>
+    <string name="msg10">First save and test the connection to the server</string>
+
+    <string name="tv_codVehiculo">Vehicle code</string>
+    <string name="tv_codigo">Code</string>
+    <string name="tv_color">Color</string>
+    <string name="tv_destino">Destination</string>
+    <string name="tv_selecUbi">Select location</string>
+    <string name="tv_selecTurno">Select shift</string>
+    <string name="bt_siguiente">Next</string>
+
+    <string name="tv_regisSal">Check out</string>
+    <string name="msg_rellenaCampos">Fill in all the fields</string>
+    <string name="msg_salirSinGuardar">Do you want to exit without saving?</string>
+    <string name="msg11">Vehicle not found</string>
+
+    <string name="msg12">Applicator not found</string>
+    <string name="msg_wsGuardar">Saving information...</string>
+
+    <string name="tv_selecRetra">Select rework</string>
+    <string name="tv_codAplicador">Applicator Code</string>
+    <string name="bt_darSalida">Let out</string>
+
+    <string name="tv_regisEnt">Check in</string>
+    <string name="tv_selecMarca">Select a brand</string>
+    <string name="tv_selecCaja">Select the box type</string>
+    <string name="tv_danos">Damage record</string>
+    <string name="tv_danosLeves">Slight damage</string>
+    <string name="tv_danosGraves">Serious damage</string>
+    <string name="tv_regisDest">Destination registration</string>
+    <string name="tv_selecDest">Select a destination</string>
+    <string name="tv_regisCol">Color registration</string>
+    <string name="tv_selecCol">Select color</string>
+    <string name="tv_regisResum">Summary</string>
+    <string name="tv_tipoCaja">Type of box</string>
+    <string name="msg13">Incorrect code format</string>
 
 </resources>

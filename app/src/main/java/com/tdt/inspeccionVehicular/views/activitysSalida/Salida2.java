@@ -52,7 +52,7 @@ public class Salida2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_salida2);
 
-        showToolbar("Salida",false);
+        showToolbar(getString(R.string.tv_regisSal),false);
 
         try {
 
@@ -114,7 +114,7 @@ public class Salida2 extends AppCompatActivity {
 
 
                     } else {
-                        Toast.makeText(getApplication(), "Rellene todos los campos", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), getString(R.string.msg_rellenaCampos), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -169,7 +169,7 @@ public class Salida2 extends AppCompatActivity {
 
         @Override protected void onPreExecute() {
             progreso = new ProgressDialog(Salida2.this);
-            progreso.setMessage("Buscando información...");
+            progreso.setMessage(getString(R.string.msg_wsVerificando));
             progreso.setCancelable(false);
             progreso.show();
         }
@@ -244,7 +244,7 @@ public class Salida2 extends AppCompatActivity {
             if(aBoolean)
             {
                 if(!encontrado) {
-                    Toast.makeText(getApplication(), "No se encontro el aplicador", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplication(), getString(R.string.msg12), Toast.LENGTH_SHORT).show();
                     et_cod_aplicador.setText("");
                     tv_aplicador.setText("");
                 }
@@ -256,7 +256,7 @@ public class Salida2 extends AppCompatActivity {
             }
             else
             {
-                Toast.makeText(getApplication(), "Error en la comunicación", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplication(), getString(R.string.msg6), Toast.LENGTH_SHORT).show();
             }
 
             et_cod_aplicador.requestFocus();
@@ -273,7 +273,7 @@ public class Salida2 extends AppCompatActivity {
 
         @Override protected void onPreExecute() {
             progreso = new ProgressDialog(Salida2.this);
-            progreso.setMessage("Guardando información...");
+            progreso.setMessage(getString(R.string.msg_wsGuardar));
             progreso.setCancelable(false);
             progreso.show();
         }
@@ -355,7 +355,7 @@ public class Salida2 extends AppCompatActivity {
             }
             else
             {
-                Toast.makeText(getApplication(), "Error en la comunicación", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(), getString(R.string.msg6), Toast.LENGTH_LONG).show();
             }
         }
     }

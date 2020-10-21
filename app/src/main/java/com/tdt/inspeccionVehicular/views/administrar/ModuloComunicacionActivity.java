@@ -40,7 +40,7 @@ public class ModuloComunicacionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modulo_comunicacion);
 
-        showToolbar("Modulo de comunicación",true);
+        showToolbar(getString(R.string.tv_comunicaciones),true);
 
         try {
 
@@ -79,9 +79,9 @@ public class ModuloComunicacionActivity extends AppCompatActivity {
                         tipo = et_tipo.getText().toString();
                         infoServidor = new InfoServidor(servidor, tipo);
                         guardarServidor();
-                        Toast.makeText(getApplication(), "Información guardada exitosamente", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), getString(R.string.msg_infoGuardada) , Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(getApplication(), "Ingresa el servidor", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), getString(R.string.msg8), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -93,7 +93,7 @@ public class ModuloComunicacionActivity extends AppCompatActivity {
                         ConsultaConexion consultaConexion = new ConsultaConexion();
                         consultaConexion.execute();
                     } else {
-                        Toast.makeText(getApplication(), "Guarda la información del servidor", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), getString(R.string.msg9) , Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -105,7 +105,7 @@ public class ModuloComunicacionActivity extends AppCompatActivity {
                         RecibirBase recibirBase = new RecibirBase();
                         recibirBase.execute();
                     } else {
-                        Toast.makeText(getApplication(), "Primero guarda y prueba la conexion con el servidor", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), getString(R.string.msg10), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -149,7 +149,7 @@ public class ModuloComunicacionActivity extends AppCompatActivity {
 
         @Override protected void onPreExecute() {
             progreso = new ProgressDialog(ModuloComunicacionActivity.this);
-            progreso.setMessage("Verificando...");
+            progreso.setMessage(getString(R.string.msg_wsVerificando));
             progreso.setCancelable(false);
             progreso.show();
         }
@@ -202,20 +202,18 @@ public class ModuloComunicacionActivity extends AppCompatActivity {
 
             if(aBoolean)
             {
-                et_comunicacion.setText("La comunicación ha sido exitosa");
-                Toast.makeText(getApplication(), "La comunicación ha sido exitosa", Toast.LENGTH_SHORT).show();
+                et_comunicacion.setText( getString(R.string.msg5) );
+                Toast.makeText(getApplication(), getString(R.string.msg5), Toast.LENGTH_SHORT).show();
                 conexionExitosa=true;
             }
             else
             {
-                et_comunicacion.setText("Error en la comunicación");
-                Toast.makeText(getApplication(), "Error en la comunicación", Toast.LENGTH_SHORT).show();
+                et_comunicacion.setText( getString(R.string.msg6) );
+                Toast.makeText(getApplication(), getString(R.string.msg6), Toast.LENGTH_SHORT).show();
                 conexionExitosa=false;
             }
         }
     }
-
-
 
     private class RecibirBase extends AsyncTask<String,Integer,Boolean> {
 
@@ -223,7 +221,7 @@ public class ModuloComunicacionActivity extends AppCompatActivity {
 
         @Override protected void onPreExecute() {
             progreso = new ProgressDialog(ModuloComunicacionActivity.this);
-            progreso.setMessage("Descargando...");
+            progreso.setMessage(getString(R.string.msg_wsVerificando));
             progreso.setCancelable(false);
             progreso.show();
         }
@@ -319,13 +317,13 @@ public class ModuloComunicacionActivity extends AppCompatActivity {
 
             if(aBoolean)
             {
-                et_comunicacion.setText("Base de datos descargada");
-                Toast.makeText(getApplication(), "Base de datos descargada", Toast.LENGTH_SHORT).show();
+                et_comunicacion.setText( getString(R.string.msg7) );
+                Toast.makeText(getApplication(), getString(R.string.msg7), Toast.LENGTH_SHORT).show();
             }
             else
             {
-                et_comunicacion.setText("Error en la comunicación");
-                Toast.makeText(getApplication(), "Error en la comunicación", Toast.LENGTH_SHORT).show();
+                et_comunicacion.setText(getString(R.string.msg6));
+                Toast.makeText(getApplication(), getString(R.string.msg6), Toast.LENGTH_SHORT).show();
             }
         }
     }

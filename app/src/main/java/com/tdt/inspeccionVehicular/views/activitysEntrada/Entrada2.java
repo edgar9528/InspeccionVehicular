@@ -24,7 +24,7 @@ public class Entrada2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entrada2);
-        showToolbar("Daños",false);
+        showToolbar(getString(R.string.tv_danos),false);
 
         try {
 
@@ -83,7 +83,7 @@ public class Entrada2 extends AppCompatActivity {
                         intent.putExtra("infoVehiculoEntrada", infoVehiculoEntrada);
                         startActivity(intent);
                     } else {
-                        Toast.makeText(getApplication(), "Rellena la información de los datos", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), getString(R.string.msg_rellenaCampos), Toast.LENGTH_SHORT).show();
                     }
                 }
             });

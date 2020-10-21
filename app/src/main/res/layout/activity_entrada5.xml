@@ -46,7 +46,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Marca"
+                    android:text="@string/tv_marca"
                     android:textColor="@color/colorPrimary"
                     android:textSize="13sp" />
 
@@ -76,7 +76,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tipo de caja"
+                    android:text="@string/tv_tipoCaja"
                     android:textColor="@color/colorPrimary"
                     android:textSize="13sp" />
 
@@ -106,7 +106,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Daños leves"
+                    android:text="@string/tv_danosLeves"
                     android:textColor="@color/colorPrimary"
                     android:textSize="13sp" />
 
@@ -136,7 +136,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Daños graves"
+                    android:text="@string/tv_danosGraves"
                     android:textColor="@color/colorPrimary"
                     android:textSize="13sp" />
 
@@ -166,7 +166,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Destino"
+                    android:text="@string/tv_destino"
                     android:textColor="@color/colorPrimary"
                     android:textSize="13sp" />
 
@@ -196,7 +196,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Color"
+                    android:text="@string/tv_color"
                     android:textColor="@color/colorPrimary"
                     android:textSize="13sp" />
 
@@ -231,7 +231,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="5"
-                android:text="Regresar"
+                android:text="@string/bt_regresar"
                 android:theme="@style/RaisedButtonDark"
                 />
 
@@ -241,7 +241,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="5"
-                android:text="Finalizar"
+                android:text="@string/bt_guardar"
                 android:theme="@style/RaisedButtonDark"
                 />
 

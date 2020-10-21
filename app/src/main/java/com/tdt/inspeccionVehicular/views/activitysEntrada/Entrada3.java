@@ -34,7 +34,7 @@ public class Entrada3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entrada3);
 
-        showToolbar("Destino",false);
+        showToolbar(getString(R.string.tv_regisDest),false);
 
         try {
 
@@ -56,7 +56,7 @@ public class Entrada3 extends AppCompatActivity {
                         intent.putExtra("infoVehiculoEntrada", infoVehiculoEntrada);
                         startActivity(intent);
                     } else {
-                        Toast.makeText(getApplication(), "Seleccione un destino", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), getString(R.string.tv_selecDest), Toast.LENGTH_SHORT).show();
                     }
                 }
             });

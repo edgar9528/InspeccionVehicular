@@ -56,13 +56,14 @@ public class PrincipalActivity extends AppCompatActivity {
 
             button_entrar.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View view) {
+                public void onClick(View view)
+                {
                     if (licenciaValida) {
                         Intent intent = new Intent(getApplication(), InicioActivity.class);
                         startActivity(intent);
 
                     } else {
-                        Toast.makeText(getApplication(), "Ingrese una licencia", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), getString(R.string.msg1)  , Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -147,18 +148,18 @@ public class PrincipalActivity extends AppCompatActivity {
 
             if( strSerieL.equals(strSerieR) && strMarcaL.equals(strMarcaR) && strModeloL.equals(strModeloR) )
             {
-                tv_infoLicencia.setText("Licencia activada");
+                tv_infoLicencia.setText( getString(R.string.tv_estadoLic1) );
                 licenciaValida = true;
             }
             else
             {
-                tv_infoLicencia.setText("Licencia erronea");
+                tv_infoLicencia.setText( getString(R.string.tv_estadoLic2) );
                 licenciaValida = false;
             }
 
         } catch (Exception ex) {
             //Toast.makeText(this, "[EX LA] " + ex.getMessage(), Toast.LENGTH_SHORT).show();
-            tv_infoLicencia.setText("Producto sin licencia");
+            tv_infoLicencia.setText( getString(R.string.tv_estadoLic3) );
             licenciaValida = false;
 
         } finally {

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/InspeccionVehicular.iml" filepath="$PROJECT_DIR$/InspeccionVehicular.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/InspeccionVehicular-app.iml" filepath="$PROJECT_DIR$/app/InspeccionVehicular-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InspeccionVehicular.iml" filepath="$PROJECT_DIR$/.idea/modules/InspeccionVehicular.iml" group="InspeccionVehicular" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="InspeccionVehicular/app" />
     </modules>
   </component>
 </project>

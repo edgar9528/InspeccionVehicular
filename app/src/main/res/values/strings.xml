@@ -1,8 +1,76 @@
 <resources>
     <string name="app_name" translatable="false">Inspección Vehicular</string>
-    <string name="title_activity_referencia" translatable="false">ReferenciaActivity</string>
     <string name="NAMESPACE" translatable="false">"http://tempuri.org/"</string>
-    <string name="title_activity_main" translatable="false">MainActivity</string>
+
+    <string name="ejemplo">Ejemplo</string>
+    <string name="derechos">Transmit Data Terminal de México S.A de C.V Todos los Derechos Reservados.</string>
+    <string name="bt_iniciar">Iniciar</string>
+    <string name="tv_licencia">Licencia</string>
+    <string name="tv_noSerie">No. Serie</string>
+    <string name="tv_modelo">Modelo</string>
+    <string name="tv_marca">Marca</string>
+    <string name="tv_dispositivo">Dispositivo</string>
+    <string name="bt_regresar">Regresar</string>
+    <string name="bt_activar">Activar</string>
+    <string name="msg1">Ingrese una licencia</string>
+    <string name="tv_estadoLic1">Licencia activada</string>
+    <string name="tv_estadoLic2">Licencia erronea</string>
+    <string name="tv_estadoLic3">Producto sin licencia</string>
+    <string name="msg_wsVerificando">Verificando...</string>
+    <string name="msg_errorWS">Error en la comunicación con el WS</string>
+    <string name="msg2">Numero de carácteres incorrecto</string>
+    <string name="msg3">Formato incorrecto</string>
+    <string name="bt_comms">Comms</string>
+    <string name="msg4">Primero configura en COMMS</string>
+    <string name="msg_importante">Importante</string>
+    <string name="msg_salir">¿Desea salir de la app?</string>
+    <string name="msg_si">Si</string>
+    <string name="msg_no">No</string>
+    <string name="tv_comunicaciones">Comunicación</string>
+    <string name="tv_servidor">Servidor</string>
+    <string name="tv_tipoApp">Tipo de aplicación</string>
+    <string name="bt_cambiarTipo">Cambiar tipo</string>
+    <string name="bt_guardar">Guardar</string>
+    <string name="bt_probar">Probar</string>
+    <string name="bt_descargarBD">Descargar base</string>
+    <string name="tv_comunicacion">Comunicación con el servidor</string>
+    <string name="msg5">La comunicación ha sido exitosa</string>
+    <string name="msg6">Error en la comunicación</string>
+    <string name="msg7">Base de datos descargada</string>
+    <string name="msg_infoGuardada">Información guardada exitosamente</string>
+    <string name="msg8">Ingresa el servidor</string>
+    <string name="msg9">Guarda la información del servidor</string>
+    <string name="msg10">Primero guarda y prueba la conexion con el servidor</string>
+    <string name="tv_codVehiculo">Código del vehículo</string>
+    <string name="tv_codigo">Código</string>
+    <string name="tv_color">Color</string>
+    <string name="tv_destino">Destino</string>
+    <string name="tv_selecUbi">Seleccione ubicación</string>
+    <string name="tv_selecTurno">Seleccione turno</string>
+    <string name="bt_siguiente">Siguiente</string>
+
+    <string name="tv_regisSal">Registrar salida</string>
+    <string name="msg_rellenaCampos">Rellena todos los campos</string>
+    <string name="msg_salirSinGuardar">¿Desea salir sin guardar?</string>
+    <string name="msg11">No se encontro el vehiculo</string>
+    <string name="msg12">No se encontro el aplicador</string>
+    <string name="msg_wsGuardar">Guardando información...</string>
+    <string name="tv_selecRetra">Seleccione retrabajos</string>
+    <string name="tv_codAplicador">Código del aplicador</string>
+    <string name="bt_darSalida">Dar salida</string>
+    <string name="tv_regisEnt">Registro entrada</string>
+    <string name="tv_selecMarca">Seleccione una marca</string>
+    <string name="tv_selecCaja">Seleccione el tipo de caja</string>
+    <string name="tv_danos">Registro daños</string>
+    <string name="tv_danosLeves">Daños leves</string>
+    <string name="tv_danosGraves">Daños graves</string>
+    <string name="tv_regisDest">Registro destino</string>
+    <string name="tv_selecDest">Seleccione un destino</string>
+    <string name="tv_regisCol">Registro color</string>
+    <string name="tv_selecCol">Seleccione el color</string>
+    <string name="tv_regisResum">Resumen</string>
+    <string name="tv_tipoCaja">Tipo de caja</string>
+    <string name="msg13">Formato de código incorrecto</string>
 
 
 </resources>

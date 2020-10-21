@@ -55,7 +55,7 @@ public class InicioActivity extends AppCompatActivity {
                             finish();
                         }
                     } else {
-                        Toast.makeText(getApplication(), "Primero configura en COMMS", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), getString(R.string.msg4), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -73,31 +73,6 @@ public class InicioActivity extends AppCompatActivity {
             Toast.makeText(getApplication(), "Error: "+e.toString(), Toast.LENGTH_SHORT).show();
         }
 
-    }
-
-    public void salir(View view)
-    {
-        AlertDialog.Builder dialogo1 = new AlertDialog.Builder(this);
-        dialogo1.setTitle("Importante");
-        dialogo1.setMessage("¿Desea salir de la app?");
-        dialogo1.setCancelable(false);
-        dialogo1.setPositiveButton("Si", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialogo1, int id) {
-
-                Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.addCategory(Intent.CATEGORY_HOME);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-                /*finish();
-                System.exit(0);*/
-            }
-        });
-        dialogo1.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialogo1, int id) {
-                //cancelar();
-            }
-        });
-        dialogo1.show();
     }
 
 }

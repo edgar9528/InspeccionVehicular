@@ -39,7 +39,7 @@
                     android:id="@+id/tv_estado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Información"
+                    android:text="@string/ejemplo"
                     android:paddingBottom="15dp"
                     android:textSize="17dp"
                     android:textColor="@color/v_negro"
@@ -56,7 +56,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Licencia"
+                        android:text="@string/tv_licencia"
                         android:textColor="@color/colorPrimary"
                         android:textSize="13sp" />
 
@@ -77,7 +77,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No. Serie"
+                        android:text="@string/tv_noSerie"
                         android:textColor="@color/colorPrimary"
                         android:textSize="13sp" />
 
@@ -107,7 +107,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Modelo"
+                        android:text="@string/tv_modelo"
                         android:textColor="@color/colorPrimary"
                         android:textSize="13sp" />
 
@@ -137,7 +137,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Marca"
+                        android:text="@string/tv_marca"
                         android:textColor="@color/colorPrimary"
                         android:textSize="13sp" />
 
@@ -167,7 +167,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dispositivo"
+                        android:text="@string/tv_dispositivo"
                         android:textColor="@color/colorPrimary"
                         android:textSize="13sp" />
 
@@ -200,7 +200,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
-                        android:text="Regresar"
+                        android:text="@string/bt_regresar"
                         android:theme="@style/RaisedButtonDark"
                         />
 
@@ -209,7 +209,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
-                        android:text="Activar"
+                        android:text="@string/bt_activar"
                         android:theme="@style/RaisedButtonDark"
                         />
                 </LinearLayout>

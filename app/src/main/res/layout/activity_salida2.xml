@@ -43,7 +43,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Seleccione retrabajos"
+                            android:text="@string/tv_selecRetra"
                             android:textColor="@color/colorPrimary"
                             android:textSize="18sp" />
 
@@ -86,7 +86,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Codigo del aplicador"
+                        android:text="@string/tv_codAplicador"
                         android:textColor="@color/colorPrimary"
                         android:textSize="18sp" />
 
@@ -120,7 +120,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="5"
-                            android:text="Regresar"
+                            android:text="@string/bt_regresar"
                             android:theme="@style/RaisedButtonDark"
                             />
 
@@ -130,7 +130,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="5"
-                            android:text="Dar salida"
+                            android:text="@string/bt_darSalida"
                             android:theme="@style/RaisedButtonDark"
                             />
 

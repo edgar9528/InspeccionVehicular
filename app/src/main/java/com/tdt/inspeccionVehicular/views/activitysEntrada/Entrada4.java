@@ -25,7 +25,7 @@ public class Entrada4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entrada4);
 
-        showToolbar("Color",false);
+        showToolbar(getString(R.string.tv_regisCol),false);
 
         try {
 
@@ -46,7 +46,7 @@ public class Entrada4 extends AppCompatActivity {
                         intent.putExtra("infoVehiculoEntrada", infoVehiculoEntrada);
                         startActivity(intent);
                     } else
-                        Toast.makeText(getApplication(), "Seleccione un color", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), getString(R.string.tv_selecCol), Toast.LENGTH_SHORT).show();
                 }
             });
 
